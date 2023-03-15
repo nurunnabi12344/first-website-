@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation{
+    background-image:linear-gradient(dodgerblue,rgb(1, 78, 155));
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+#navigation >ul >li{
+    list-style: none;
+    margin: 0px 5px;
+    margin-left: -5px;
+    padding: 15px 0px;
+}
+#navigation > ul> li> a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding:16px 20px;
+    transition: 0.5s;
+}
+#navigation > ul> li:first-child >a{
+    border-left: 1px solid white;
+}
+#navigation > ul > li:hover >a{
+    background-color: rgb(3,87,172);
+}
+.logo >h2{
+    color:white;
+    margin-left: 50px;
+}
+.logofirstletter{
+    color: yellow;
+    font-size: 30px;
+}
+
+/*drpdown menu code start */
+
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    text-align: center;
+    margin-top: 15px;
+    width: 190px;
+    position: absolute;
+    transition: 0.5s;
+    box-shadow: 10px 10px 8px black;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.dropdown >li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+.dropdown > li:hover{
+    background-color: brown;
+}
+.dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+.dropdown > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+#navigation > ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* hero area start*/
+#main-header{
+    text-align: center;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.192),rgba(252, 249, 249, 0.281)),url('flowepic.png');
+    height: 90vh;
+}
+.header-container{
+    padding-top: 100px;
+}
+.header-container > h1{
+    background-color:rgba(29, 4, 168, 0.596);
+    width: 500px;
+    margin: 20px auto;
+    font-size: 50px;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 10px;
+    
+}
+.header-container > button{
+    font-size: 22px;
+    padding: 11px 20px;
+    background-color:#024a92be;
+    color: white;
+    border-radius: 30px 10px 30px 10px;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: 1s;
+}
+.header-container > button:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.header-container > h4{
+    font-size: 25px;
+    color: rgb(114, 113, 113);
+}
+.header-container > h5{
+    font-size: 25px;
+    color:rgb(116, 52, 52);
+}
+.socilIcon > a >i{
+    margin: 5px 2px;
+    padding: 5px;
+    font-size: 30px;
+   border: 2px solid white;
+    background-color: red;
+    
+}
+/* first section start here */
+#first-section{
+    background-color: lightgoldenrodyellow;
+}
+#first-container{
+    width: 1000px;
+    display: flex;
+    jutify-content: space-between;
+    padding: 50px 0px;
+    margin: auto;
+    
+   
+    
+}
+.learn-programming{
+    width: 300px;
+   transform: .5px;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.learn-programming >i{
+    font-size: 50px;
+}
+
+.learn-programming > h2{
+    margin: 15px 0px;
+}
+
+.learn-programming:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+.SmartArea-title > h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.SmartArea-title > h2::after{
+    content: '';
+    top: 49px;
+    left:600px;
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+}
+.smart-area{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+   justify-content: space-between;
+   padding: 50px;
+}
+.smart-area-text{
+    width: 500px;
+}
+.smart-area-text > h2{
+    margin: 20px 0;
+}
+.smart-area-text > h4{
+    color: red;
+}
+.smart-area-text > a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px 0;
+    display: inline-block;
+}
+/* 3rd section start here */
+#third-section{
+    background-color: lightgray;
+}
+.services-area-title{
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+.services-area > h2{
+    font-size: 40px;
+}
+.each-services-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    padding-bottom:60px ;
+
+}
+.services-area{
+    width: 1000px;
+    margin: auto;
+}
+.each-services{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.each-services:hover{
+    background-color: cadetblue;
+}
+.each-services > i{
+    font-size: 40px;
+    color: red;
+}
+.each-services > h3{
+    margin: 15px 0;
+}
+/* 4th section start here */
+#fourth-section{
+    background-color: whitesmoke;
+}
+.pricing-container{
+    width: 1000px;
+  
+    margin: auto;
+    padding-bottom: 100px;
+}
+.pricing-area-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-title{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+.single-card-png{
+    width: 315px;
+  
+    height: 300px;
+}
+.single-card-png > img{
+    max-width: 100%;
+}
+.single-card{
+    width: 315px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray ;
+   
+}
+.single-card > h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.month-pricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0;
+    margin: 15px 20px;
+}
+.month-pricing > .span-first{
+    font-size: 25px;
+}
+.single-card > button{
+    background-color: red;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.single-card > button:hover{
+    background-color: lightskyblue;
+}
+.single-card > a{
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* testimonial section start here */
+#testimonial-section{
+    background-color: bisque;
+}
+.testimonial-container{
+    width: 1000px;
+   padding-bottom: 100px;
+    margin: auto;
+}
+
+.testimonial-title{
+text-align: center;
+padding: 50px 0;
+}
+.testimonial-title h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.testimonial-title h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+.testi-singlecard-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:25px
+}
+.testi-singlecard{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+.testi-imsge{
+    width: 200px;
+   
+    border-radius: 50%;
+    margin-right: 20px;
+   
+}
+.testi-imsge img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.testi-span{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: inline;
+}
+.testi-ratings{
+    color: goldenrod;
+}
+/* paralax section start here */
+#paralax-section{
+   background-image: url(parallax.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+    padding: 80px 0;
+  ;
+}
+.paralax-items-parent{
+   display: flex;
+   justify-content: space-between;
+   width: 1000px;
+  
+   margin: auto;
+   text-align: center;
+   color: white;
+}
+.paralax-single-item i{
+    font-size: 40px;
+
+}
+.paralax-single-item h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+/* blog session start */
+.blog-container{
+    width: 1000px;
+  
+    margin: auto;
+    padding-bottom: 100px;
+}
+.blog-card-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+}
+
+
+.blog-image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+    .blog-image-icon-div{
+        position: relative;
+        overflow: hidden;
+}
+.blog-image-icon-div:hover .blog-icon{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.blog-image-icon-div:hover .blog-image{
+    transform: scale(1.6);
+}
+.blog-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 252px;
+    width: 315px;
+    display: grid;
+    place-content: center;
+    color: white;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.blog-icon i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* contact section start */
+.contact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.form-parent{
+    background-color: rgb(205, 206, 207);
+    display: flex;
+}
+.form-tag{
+    width: 600px;
+
+}
+.fullname-email-parent{
+   display: flex;
+
+}
+
+
+.fullname-email-parent input{
+    width: 200px;
+    height: 40px;
+        margin: 0 20px;
+        padding: 0 10px;
+    }
+.fullname-email-parent h4{
+    margin: 40px 20px 10px 20px;
+}
+.form-address-parent{
+    display: flex;
+}
